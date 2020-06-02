@@ -30,8 +30,6 @@ const Dashboard: React.FC = () => {
       await api.get('/foods').then(response => setFoods(response.data));
     }
 
-    console.log('Pratos buscados da api');
-
     loadFoods();
   }, []);
 
